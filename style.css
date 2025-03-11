@@ -1,0 +1,925 @@
+/******************************************************************************************* GENERAL */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+/******************************************************************************************* NAVBAR */
+
+#navbar {
+  margin: 0 30px;
+}
+#home-section {
+  height: 100vh;
+  background: linear-gradient(110deg, white 68%, #e02d2d 32%);
+}
+#logo {
+  color: #f39c12;
+  cursor: default;
+  font-size: 30px;
+  font-weight: bold;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.9), 2px 2px 3px rgba(0, 0, 0, 0.6);
+}
+#logo span {
+  color: #e02d2d;
+}
+.nav-item,
+.dropdown-menu,
+.dropdown-item {
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+.nav-item {
+  margin-left: 3rem;
+}
+.nav-item .nav-link {
+  text-decoration: white;
+  color: black;
+  font-weight: bold;
+}
+.nav-item .nav-link:hover {
+  color: #f39c12;
+  text-decoration: underline;
+  text-underline-offset: 1rem;
+  text-decoration-color: #f39c12;
+  text-shadow: 1px 1px 1px black;
+  transition: all 300ms ease-in-out;
+}
+.dropdown-menu .dropdown-item {
+  text-decoration: white;
+  font-weight: bold;
+}
+.dropdown-menu .dropdown-item:hover {
+  color: #f39c12;
+  text-decoration: underline;
+  text-underline-offset: 1rem;
+  text-decoration-color: #f39c12;
+  text-shadow: 1px 1px 1px black;
+  transition: all 300ms ease-in-out;
+}
+
+/******************************************************************************************* HERO-SECTION */
+
+#hero-section {
+  animation: fadeInUp 1s ease-in-out;
+  font-family: "Roboto Slab", serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  margin: 0 5rem;
+}
+.hero-content {
+  flex: 1 1 300px;
+}
+.hero-img {
+  flex-wrap: wrap;
+}
+.hero-img img {
+  margin-top: 1.5rem;
+  animation: imgFloat 3s ease-in-out infinite;
+}
+.hero-content h1 {
+  color: #e02d2d;
+  font-size: 3rem;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.8), 2px 2px 4px rgba(0, 0, 0, 0.6),
+    3px 3px 6px rgba(0, 0, 0, 0.4);
+}
+.hero-content span {
+  color: #f39c12;
+  font-size: 4rem;
+}
+.hero-content p {
+  font-size: 1.1rem;
+}
+.hero-btn button {
+  width: 160px;
+  height: 40px;
+  letter-spacing: 2px;
+  font-size: 1rem;
+  font-weight: bold;
+  background-color: #f39c12;
+  color: black;
+  border: none;
+  border-radius: 8px;
+  transition: all 0.4s ease-in-out;
+  cursor: pointer;
+  box-shadow: 6px 6px 12px rgba(0, 0, 0, 0.4);
+}
+.hero-btn button:hover {
+  background-color: #e02d2d;
+  color: white;
+  border: 2px solid black;
+  transform: scale(1.05);
+  box-shadow: none;
+}
+
+/******************************************************************************************* OFFER-SECTION */
+
+#offer-section {
+  animation: fadeInUp 1s ease-in-out;
+}
+.row {
+  padding-top: 1.5rem;
+}
+#offer-section h1 {
+  padding-bottom: 1rem;
+  font-family: "Roboto Slab", serif;
+  text-align: center;
+  border-bottom: 2px solid#f39c12;
+}
+#offer-section h3 {
+  font-family: "Roboto Slab", serif;
+  font-size: 1.3rem;
+}
+#offer-section i {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+.offer-card {
+  margin-bottom: 1rem;
+}
+.cards {
+  padding: 2rem 0;
+}
+.card img {
+  width: 100%;
+  object-fit: cover;
+}
+.card h3 {
+  color: #f39c12;
+  font-weight: bold;
+}
+.card {
+  position: relative;
+  transition: transform 0.3s ease;
+}
+.card:hover {
+  transform: scale(1.1);
+  z-index: 2;
+  overflow: hidden;
+}
+.card-img-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 10px;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+.card:hover .card-img-overlay {
+  opacity: 1;
+}
+.card-btn {
+  background-color: #f39c12;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+.card-btn:hover {
+  background-color: #e02d2d;
+}
+
+/******************************************************************************************* FOOTER */
+
+#footer-section {
+  background: #f39c12;
+  color: #fff;
+  font-family: "Arial", sans-serif;
+  letter-spacing: 0.5px;
+  margin-top: 2rem;
+  animation: fadeInUp 1s ease-in-out;
+}
+.footer-contact img {
+  margin-bottom: 20px;
+  border-radius: 50%;
+  border: 3px solid #f39c12;
+  box-shadow: 0px 0px 15px rgba(243, 156, 18, 0.8);
+  transition: transform 0.5s ease;
+}
+.footer-top {
+  padding: 30px 0;
+  background: linear-gradient(110deg, black 68%, #f39c12 32%);
+}
+.footer-contact,
+.footer-links,
+.footer-socials {
+  margin-bottom: 30px;
+}
+.footer-contact p,
+.footer-links ul,
+.footer-socials p {
+  margin: 0;
+  font-size: 16px;
+}
+.footer-contact p {
+  margin-bottom: 20px;
+  font-size: 14px;
+}
+.footer-contact strong {
+  font-weight: bold;
+  font-size: 16px;
+}
+.footer-links h4,
+.footer-socials h4 {
+  margin-bottom: 15px;
+  font-size: 22px;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+.footer-links ul {
+  list-style-type: none;
+  padding: 0;
+}
+.footer-links li {
+  margin-bottom: 10px;
+}
+.footer-links a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 16px;
+  transition: color 0.3s;
+  font-weight: 300;
+}
+.footer-links a:hover {
+  color: #f39c12;
+  font-weight: 600;
+}
+.footer-socials .social-links {
+  display: flex;
+  gap: 15px;
+}
+.footer-socials .social-links a {
+  color: #fff;
+  font-size: 24px;
+  transition: transform 0.3s ease, color 0.3s ease;
+  display: inline-block;
+}
+.footer-socials .social-links a:hover {
+  color: #f39c12;
+  transform: translateY(-5px);
+}
+.footer-bottom {
+  padding: 20px 0;
+  font-size: 14px;
+  text-align: center;
+}
+.footer-bottom p {
+  margin: 0;
+  color: #ecf0f1;
+  font-weight: 400;
+  letter-spacing: 1px;
+}
+.footer-row {
+  gap: 2rem;
+}
+
+/******************************************************************************************* ABOUT-SECTION */
+
+#about-section {
+  animation: fadeInUp 1s ease-in-out;
+}
+.container {
+  padding: 50px 15px;
+}
+.about-title {
+  font-family: "Roboto Slab", serif;
+  text-align: center;
+  border-bottom: 2px solid #f39c12;
+  padding-bottom: 1rem;
+  margin-bottom: 30px;
+}
+.about-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+.about-img {
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+.about-img img {
+  height: 100%;
+  object-fit: cover;
+}
+.about-logo {
+  font-weight: bold;
+  color: #f39c12;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.9), 2px 2px 3px rgba(0, 0, 0, 0.6);
+}
+.about-logo2 {
+  font-weight: bold;
+  color: #e02d2d;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.9), 2px 2px 3px rgba(0, 0, 0, 0.6);
+}
+h2,
+h3 {
+  font-family: "Roboto Slab", serif;
+  letter-spacing: 1px;
+}
+.about-content h2 {
+  font-size: 2.5rem;
+  text-align: center;
+  margin-bottom: 20px;
+}
+.about-content p {
+  font-size: 1.2rem;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+.about-details h5 {
+  font-size: 1.1rem;
+  margin-bottom: 10px;
+}
+.open-hours {
+  font-weight: bold;
+  color: #e02d2d;
+}
+.our-story {
+  background-color: #f8f8f8;
+  padding: 20px;
+  border-radius: 8px;
+  margin-bottom: 30px;
+}
+.our-story h3 {
+  font-size: 1.8rem;
+  margin-bottom: 15px;
+}
+.owner-name {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+.owner-img {
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+  margin-right: 20px;
+}
+.about-cart-icon {
+  font-size: 1.5rem;
+  margin-left: 3rem;
+  cursor: pointer;
+}
+.about-cart-icon:hover {
+  animation: bounce 1s linear;
+  color: #f39c12;
+}
+.about-btn-container {
+  display: flex;
+  justify-content: flex-end;
+}
+.about-btn {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 10px 20px;
+  font-size: 1rem;
+  font-weight: bold;
+  background-color: #f39c12;
+  color: white;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: background 0.3s ease-in-out;
+}
+.about-btn:hover {
+  background-color: #e02d2d;
+}
+
+/******************************************************************************************* BURGER-SECTION */
+
+#burger-section {
+  display: flex;
+  flex-wrap: wrap;
+  font-family: "Roboto Slab", serif;
+  animation: fadeInUp 1s ease-in-out;
+}
+.burger-card {
+  width: 95%;
+  height: 90%;
+  border: 1px solid #ddd;
+  background-color: #fff;
+  margin-bottom: 3rem;
+  border-radius: 10px;
+  transition: transform 0.3s ease-in-out;
+  padding: 1rem;
+}
+.burger-card img {
+  height: 200px;
+  width: 200px;
+  object-fit: cover;
+  display: block;
+  margin: 0 auto;
+}
+.burger-card:hover {
+  transform: scale(1.1);
+  z-index: 2;
+  background-color: #f39c12;
+}
+.card-body h4 {
+  font-weight: bold;
+  margin: 1.5rem 0;
+}
+.card-body h5 span {
+  float: right;
+}
+.burger-card:hover {
+  transform: scale(1.05);
+  transition: transform 0.3s ease-in-out;
+}
+.burger-cart-icon {
+  font-size: 1.5rem;
+  margin-left: 15px;
+  cursor: pointer;
+  position: relative;
+}
+.burger-cart-icon:hover {
+  animation: bounce 1s linear;
+  color: #e02d2d;
+}
+.burger-cart-icon::after {
+  content: "Add to Cart";
+  position: absolute;
+  bottom: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: rgba(0, 0, 0, 0.75);
+  color: #fff;
+  padding: 5px 8px;
+  border-radius: 5px;
+  font-size: 0.75rem;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s ease, visibility 0.3s ease;
+  white-space: nowrap;
+  pointer-events: none;
+}
+.burger-cart-icon:hover::after {
+  opacity: 1;
+  visibility: visible;
+}
+
+/******************************************************************************************* CONTACT US-SECTION */
+
+#contact-us-section {
+  padding: 50px 10px;
+  background-color: #f9f9f9;
+  animation: fadeInUp 1s ease-in-out;
+}
+#contact-us-section h2 {
+  font-size: 2.5rem;
+  text-align: center;
+  font-family: "Roboto Slab", serif;
+  border-bottom: 2px solid #f39c12;
+  padding-bottom: 1rem;
+  margin-bottom: 30px;
+}
+#contact-us-section h3 {
+  font-size: 1.8rem;
+  margin-bottom: 20px;
+}
+#contact-us-section p {
+  font-size: 1rem;
+  line-height: 1.8;
+}
+form label {
+  display: block;
+  margin-top: 15px;
+  font-weight: bold;
+}
+form input {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  outline: none;
+  transition: all 0.3s ease-in-out;
+}
+form input:focus {
+  border-color: #f39c12;
+  box-shadow: 0 0 8px rgba(255, 174, 3, 0.7);
+  outline: none;
+  transition: all 0.3s ease;
+}
+form input:hover {
+  box-shadow: 0 0 8px #f39c12;
+}
+form textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  outline: none;
+  transition: all 0.3s ease-in-out;
+  resize: none;
+}
+form textarea:focus {
+  border-color: #f39c12;
+  box-shadow: 0 0 10px rgba(255, 174, 3, 0.6);
+}
+form textarea:hover {
+  box-shadow: 0 0 8px #f39c12;
+}
+.btn-message {
+  margin-top: 1rem;
+  width: 160px;
+  height: 40px;
+  letter-spacing: 2px;
+  font-size: 1rem;
+  font-weight: bold;
+  background-color: #f39c12;
+  color: black;
+  border: none;
+  border-radius: 8px;
+  transition: all 0.4s ease-in-out;
+  cursor: pointer;
+  box-shadow: 6px 6px 12px rgba(0, 0, 0, 0.4);
+}
+.btn-message:hover {
+  background-color: #e02d2d;
+  color: white;
+  border: 2px solid black;
+  transform: scale(1.05);
+  box-shadow: none;
+  cursor: pointer;
+}
+.social-icons a {
+  display: inline-block;
+  margin: 0 10px;
+  font-size: 24px;
+  color: #f39c12;
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+.social-icons a:hover {
+  color: #e02d2d;
+  transform: translateY(-5px);
+  cursor: pointer;
+}
+
+/******************************************************************************************* DRNIKS-SECTION */
+
+#drinks-section {
+  font-family: "Roboto Slab", serif;
+  animation: fadeInUp 1s ease-in-out;
+}
+.drinks-card {
+  width: 95%;
+  height: 90%;
+  border: 1px solid #ddd;
+  background-color: #fff;
+  margin-bottom: 3rem;
+  border-radius: 10px;
+  transition: transform 0.3s ease-in-out;
+  padding: 1rem;
+}
+.drinks-card img {
+  height: 200px;
+  width: 200px;
+  object-fit: cover;
+  display: block;
+  margin: 0 auto;
+}
+.drinks-card:hover {
+  transform: scale(1.1);
+  z-index: 2;
+  background-color: #f39c12;
+}
+.drinks-cart-icon {
+  font-size: 1.5rem;
+  margin-left: 15px;
+  cursor: pointer;
+  position: relative;
+}
+.drinks-cart-icon:hover {
+  animation: bounce 1s linear;
+  color: #e02d2d;
+}
+.drinks-cart-icon::after {
+  content: "Add to Cart";
+  position: absolute;
+  bottom: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: rgba(0, 0, 0, 0.75);
+  color: #fff;
+  padding: 5px 8px;
+  border-radius: 5px;
+  font-size: 0.75rem;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s ease, visibility 0.3s ease;
+  white-space: nowrap;
+  pointer-events: none;
+}
+.drinks-cart-icon:hover::after {
+  opacity: 1;
+  visibility: visible;
+}
+
+/******************************************************************************************* FRENCH-FRIES-SECTION */
+
+#french-fries-section {
+  font-family: "Roboto Slab", serif;
+  animation: fadeInUp 1s ease-in-out;
+}
+.french-fries-card {
+  width: 95%;
+  height: 90%;
+  border: 1px solid #ddd;
+  background-color: #fff;
+  margin-bottom: 3rem;
+  border-radius: 10px;
+  transition: transform 0.3s ease-in-out;
+  padding: 1rem;
+}
+.french-fries-card img {
+  height: 200px;
+  width: 200px;
+  object-fit: cover;
+  display: block;
+  margin: 0 auto;
+}
+.french-fries-card:hover {
+  transform: scale(1.1);
+  z-index: 2;
+  background-color: #f39c12;
+}
+.french-fries-cart-icon {
+  font-size: 1.5rem;
+  margin-left: 15px;
+  cursor: pointer;
+  position: relative;
+}
+.french-fries-cart-icon:hover {
+  animation: bounce 1s linear;
+  color: #e02d2d;
+}
+.french-fries-cart-icon::after {
+  content: "Add to Cart";
+  position: absolute;
+  bottom: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: rgba(0, 0, 0, 0.75);
+  color: #fff;
+  padding: 5px 8px;
+  border-radius: 5px;
+  font-size: 0.75rem;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s ease, visibility 0.3s ease;
+  white-space: nowrap;
+  pointer-events: none;
+}
+.french-fries-cart-icon:hover::after {
+  opacity: 1;
+  visibility: visible;
+}
+
+/******************************************************************************************* FRIED-CHICKEN-SECTION */
+
+#fried-chicken-section {
+  font-family: "Roboto Slab", serif;
+  animation: fadeInUp 1s ease-in-out;
+}
+.fried-chicken-card {
+  width: 95%;
+  height: 90%;
+  border: 1px solid #ddd;
+  background-color: #fff;
+  margin-bottom: 3rem;
+  border-radius: 10px;
+  transition: transform 0.3s ease-in-out;
+  padding: 1rem;
+}
+.fried-chicken-card img {
+  height: 200px;
+  width: 200px;
+  object-fit: cover;
+  display: block;
+  margin: 0 auto;
+}
+.fried-chicken-card:hover {
+  transform: scale(1.1);
+  z-index: 2;
+  background-color: #f39c12;
+}
+.fried-chicken-cart-icon {
+  font-size: 1.5rem;
+  margin-left: 15px;
+  cursor: pointer;
+  position: relative;
+}
+.fried-chicken-cart-icon:hover {
+  animation: bounce 1s linear;
+  color: #e02d2d;
+}
+.fried-chicken-cart-icon::after {
+  content: "Add to Cart";
+  position: absolute;
+  bottom: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: rgba(0, 0, 0, 0.75);
+  color: #fff;
+  padding: 5px 8px;
+  border-radius: 5px;
+  font-size: 0.75rem;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s ease, visibility 0.3s ease;
+  white-space: nowrap;
+  pointer-events: none;
+}
+.fried-chicken-cart-icon:hover::after {
+  opacity: 1;
+  visibility: visible;
+}
+
+/******************************************************************************************* PIZZA-SECTION */
+
+#pizza-section {
+  font-family: "Roboto Slab", serif;
+  animation: fadeInUp 1s ease-in-out;
+}
+.pizza-card {
+  width: 95%;
+  height: 90%;
+  border: 1px solid #ddd;
+  background-color: #fff;
+  margin-bottom: 3rem;
+  border-radius: 10px;
+  transition: transform 0.3s ease-in-out;
+  padding: 1rem;
+}
+.pizza-card img {
+  height: 200px;
+  width: 200px;
+  object-fit: cover;
+  display: block;
+  margin: 0 auto;
+}
+.pizza-card:hover {
+  transform: scale(1.1);
+  z-index: 2;
+  background-color: #f39c12;
+}
+.pizza-cart-icon {
+  font-size: 1.5rem;
+  margin-left: 15px;
+  cursor: pointer;
+  position: relative;
+}
+.pizza-cart-icon:hover {
+  animation: bounce 1s linear;
+  color: #e02d2d;
+}
+.pizza-cart-icon::after {
+  content: "Add to Cart";
+  position: absolute;
+  bottom: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: rgba(0, 0, 0, 0.75);
+  color: #fff;
+  padding: 5px 8px;
+  border-radius: 5px;
+  font-size: 0.75rem;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s ease, visibility 0.3s ease;
+  white-space: nowrap;
+  pointer-events: none;
+}
+.pizza-cart-icon:hover::after {
+  opacity: 1;
+  visibility: visible;
+}
+
+/******************************************************************************************* SPAGHETTI-SECTION */
+
+#spaghetti-section {
+  font-family: "Roboto Slab", serif;
+  animation: fadeInUp 1s ease-in-out;
+}
+.spaghetti-card {
+  width: 95%;
+  height: 90%;
+  border: 1px solid #ddd;
+  background-color: #fff;
+  margin-bottom: 3rem;
+  border-radius: 10px;
+  transition: transform 0.3s ease-in-out;
+  padding: 1rem;
+}
+.spaghetti-card img {
+  height: 200px;
+  width: 200px;
+  object-fit: cover;
+  display: block;
+  margin: 0 auto;
+}
+.spaghetti-card:hover {
+  transform: scale(1.1);
+  z-index: 2;
+  background-color: #f39c12;
+}
+.spaghetti-cart-icon {
+  font-size: 1.5rem;
+  margin-left: 15px;
+  cursor: pointer;
+  position: relative;
+}
+.spaghetti-cart-icon:hover {
+  animation: bounce 1s linear;
+  color: #e02d2d;
+}
+.spaghetti-cart-icon::after {
+  content: "Add to Cart";
+  position: absolute;
+  bottom: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: rgba(0, 0, 0, 0.75);
+  color: #fff;
+  padding: 5px 8px;
+  border-radius: 5px;
+  font-size: 0.75rem;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s ease, visibility 0.3s ease;
+  white-space: nowrap;
+  pointer-events: none;
+}
+.spaghetti-cart-icon:hover::after {
+  opacity: 1;
+  visibility: visible;
+}
+
+/*************************************************************************************** KEYFRAMES */
+
+@keyframes bounce {
+  20%,
+  50%,
+  80%,
+  to {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-30px);
+  }
+  70% {
+    transform: translateY(-15px);
+  }
+  90% {
+    transform: translateY(-4px);
+  }
+}
+@keyframes imgFloat {
+  0%,
+  100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-30px);
+  }
+}
+
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+@keyframes slideUp {
+  from {
+    transform: translateY(50px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}

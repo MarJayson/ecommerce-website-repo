@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../style.css" />
+    <link rel="shortcut icon" href="../images/logo.png" />
+    <link rel="stylesheet" href="../mediaqueries.css" />
+    <!-------------------------------------------------------------------------------------------- GOOGLE-FONT-LINK -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@500&display=swap"
+      rel="stylesheet"
+    />
+    <!-------------------------------------------------------------------------------------------- FONT-AWESOME-LINK -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    />
+    <!-------------------------------------------------------------------------------------------- BOOTSTRAP-LINK -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <title>Fast Food</title>
+  </head>
+  <body>
+    <!-------------------------------------------------------------------------------------------- NAVBAR -->
+    <nav id="navbar" class="navbar navbar-expand-lg">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#" id="logo">
+          <img
+            src="../images/logo.png"
+            alt="logo-image"
+            width="70px"
+            height="70px"
+          />FAST <span>FOOD</span>
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span><i class="fa-solid fa-bars"></i></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" href="../index.html">Home</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Orders
+              </a>
+              <ul class="dropdown-menu">
+                <li>
+                  <a class="dropdown-item" href="./pizza.html">Pizza</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="./french-fries.html"
+                    >French Fries</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="./fried-chicken.html"
+                    >Fried Chicken</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="./burger.html">Burger</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="./spaghetti.html">Spaghetti</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="./drinks.html"
+                    >Drinks | Sweets</a
+                  >
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./about.html">About Us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./contact-us.html">Contact Us</a>
+            </li>
+          </ul>
+          <div class="icons">
+            <i class="about-cart-icon fa-solid fa-cart-shopping"></i>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <!-------------------------------------------------------------------------------------------- DRINKS-SECTION -->
+    <section class="container" id="drinks-section">
+      <div class="row">
+        <div class="col-lg-4 col-md-6 py-3 py-md-0">
+          <div class="drinks-card">
+            <img src="../images/soda.png" alt="" />
+            <div class="card-body">
+              <h4>Coke</h4>
+              <h5>
+                &#8369;100
+                <span
+                  ><i class="drinks-cart-icon fa-solid fa-cart-shopping"></i
+                ></span>
+              </h5>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 py-3 py-md-0">
+          <div class="drinks-card">
+            <img src="../images/orange juice.png" alt="" />
+            <div class="card-body">
+              <h4>Orange Juice</h4>
+              <h5>
+                &#8369;100
+                <span
+                  ><i class="drinks-cart-icon fa-solid fa-cart-shopping"></i
+                ></span>
+              </h5>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 py-3 py-md-0">
+          <div class="drinks-card">
+            <img src="../images/mango juice.png" alt="" />
+            <div class="card-body">
+              <h4>Mango Juice</h4>
+              <h5>
+                &#8369;100
+                <span
+                  ><i class="drinks-cart-icon fa-solid fa-cart-shopping"></i
+                ></span>
+              </h5>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 py-3 py-md-0">
+          <div class="drinks-card">
+            <img src="../images/chocolate.png" alt="" />
+            <div class="card-body">
+              <h4>Chocolate</h4>
+
+              <h5>
+                &#8369;150
+                <span
+                  ><i class="drinks-cart-icon fa-solid fa-cart-shopping"></i
+                ></span>
+              </h5>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 py-3 py-md-0">
+          <div class="drinks-card">
+            <img src="../images/ice cream.png" alt="" />
+            <div class="card-body">
+              <h4>Ice Cream</h4>
+
+              <h5>
+                &#8369;150
+                <span
+                  ><i class="drinks-cart-icon fa-solid fa-cart-shopping"></i
+                ></span>
+              </h5>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!------------------------------------------------------------------------------------------- FOOTER -->
+    <footer id="footer-section">
+      <div class="footer-top">
+        <div class="container">
+          <div class="footer-row row">
+            <div class="col-lg-3 col-md-6 footer-contact">
+              <img src="/images/logo.png" alt="" height="70px" width="70px" />
+              <p>
+                We are a team dedicated to providing top-notch services and
+                products that cater to your specific needs. Whether you're
+                looking for innovative solutions or reliable support, we've got
+                you covered.
+              </p>
+              <p>
+                <strong>NCR Branch:</strong><br />
+                Taguig, City <br />
+                Makati, City <br />
+                <strong>Isabela Branch:</strong><br />
+                Reina Mecedes <br />
+                Tuguegarao, City <br />
+              </p>
+              <strong>
+                <i class="fa-solid fa-phone"> Phone:</i> 0912-345-6789 | 888-999 </strong
+              ><br />
+              <strong>Email: contact@company.com</strong>
+            </div>
+            <div class="col-lg-3 col-md-6 footer-links">
+              <h4>Links</h4>
+              <ul>
+                <li><a href="">Home</a></li>
+                <li><a href="">About Us</a></li>
+                <li><a href="">Orders</a></li>
+                <li><a href="">Privacy Policy</a></li>
+                <li><a href="">Terms and Conditions</a></li>
+              </ul>
+            </div>
+            <div class="col-lg-3 col-md-6 footer-socials">
+              <h4>Our Social Links</h4>
+              <p>Follow us on social media for updates and news!</p>
+              <div class="social-links mt-3">
+                <a href="https://facebook.com"
+                  ><i class="fa-brands fa-facebook"></i
+                ></a>
+                <a href="https://instagram.com"
+                  ><i class="fa-brands fa-instagram"></i
+                ></a>
+                <a href="https://twitter.com"
+                  ><i class="fa-brands fa-twitter"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="footer-bottom text-center">
+          <p>Copyright &#169; All Rights Reserved.</p>
+        </div>
+      </div>
+    </footer>
+
+    <!------------------------------------------------------------------------------------------- BOOTSTRAP-SCRIPT -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
