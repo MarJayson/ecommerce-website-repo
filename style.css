@@ -899,7 +899,7 @@ form textarea:hover {
     transform: translateY(0px);
   }
   50% {
-    transform: translateY(-30px);
+    transform: translateY(30px);
   }
 }
 
