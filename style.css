@@ -407,9 +407,16 @@ h3 {
 
 #burger-section {
   display: flex;
+  justify-content: center;
+  align-items: center;
   flex-wrap: wrap;
   font-family: "Roboto Slab", serif;
   animation: fadeInUp 1s ease-in-out;
+}
+#burger-section .row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .burger-card {
   width: 95%;
@@ -577,8 +584,17 @@ form textarea:hover {
 /******************************************************************************************* DRNIKS-SECTION */
 
 #drinks-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
   font-family: "Roboto Slab", serif;
   animation: fadeInUp 1s ease-in-out;
+}
+#drinks-section .row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .drinks-card {
   width: 95%;
@@ -637,8 +653,17 @@ form textarea:hover {
 /******************************************************************************************* FRENCH-FRIES-SECTION */
 
 #french-fries-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
   font-family: "Roboto Slab", serif;
   animation: fadeInUp 1s ease-in-out;
+}
+#french-fries-section .row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .french-fries-card {
   width: 95%;
@@ -697,8 +722,17 @@ form textarea:hover {
 /******************************************************************************************* FRIED-CHICKEN-SECTION */
 
 #fried-chicken-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
   font-family: "Roboto Slab", serif;
   animation: fadeInUp 1s ease-in-out;
+}
+#fried-chicken-section .row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .fried-chicken-card {
   width: 95%;
@@ -757,8 +791,17 @@ form textarea:hover {
 /******************************************************************************************* PIZZA-SECTION */
 
 #pizza-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
   font-family: "Roboto Slab", serif;
   animation: fadeInUp 1s ease-in-out;
+}
+#pizza-section .row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .pizza-card {
   width: 95%;
@@ -817,8 +860,17 @@ form textarea:hover {
 /******************************************************************************************* SPAGHETTI-SECTION */
 
 #spaghetti-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
   font-family: "Roboto Slab", serif;
   animation: fadeInUp 1s ease-in-out;
+}
+#spaghetti-section .row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .spaghetti-card {
   width: 95%;
