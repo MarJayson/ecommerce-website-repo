@@ -380,7 +380,6 @@ h3 {
   cursor: pointer;
 }
 .about-cart-icon:hover {
-  animation: bounce 1s linear;
   color: #f39c12;
 }
 .about-btn-container {
@@ -458,7 +457,6 @@ h3 {
   position: relative;
 }
 .burger-cart-icon:hover {
-  animation: bounce 1s linear;
   color: #e02d2d;
 }
 .burger-cart-icon::after {
@@ -625,7 +623,6 @@ form textarea:hover {
   position: relative;
 }
 .drinks-cart-icon:hover {
-  animation: bounce 1s linear;
   color: #e02d2d;
 }
 .drinks-cart-icon::after {
@@ -694,7 +691,6 @@ form textarea:hover {
   position: relative;
 }
 .french-fries-cart-icon:hover {
-  animation: bounce 1s linear;
   color: #e02d2d;
 }
 .french-fries-cart-icon::after {
@@ -763,7 +759,6 @@ form textarea:hover {
   position: relative;
 }
 .fried-chicken-cart-icon:hover {
-  animation: bounce 1s linear;
   color: #e02d2d;
 }
 .fried-chicken-cart-icon::after {
@@ -832,7 +827,6 @@ form textarea:hover {
   position: relative;
 }
 .pizza-cart-icon:hover {
-  animation: bounce 1s linear;
   color: #e02d2d;
 }
 .pizza-cart-icon::after {
@@ -901,7 +895,6 @@ form textarea:hover {
   position: relative;
 }
 .spaghetti-cart-icon:hover {
-  animation: bounce 1s linear;
   color: #e02d2d;
 }
 .spaghetti-cart-icon::after {
@@ -928,23 +921,6 @@ form textarea:hover {
 
 /*************************************************************************************** KEYFRAMES */
 
-@keyframes bounce {
-  20%,
-  50%,
-  80%,
-  to {
-    transform: translateY(0);
-  }
-  40% {
-    transform: translateY(-30px);
-  }
-  70% {
-    transform: translateY(-15px);
-  }
-  90% {
-    transform: translateY(-4px);
-  }
-}
 @keyframes imgFloat {
   0%,
   100% {
