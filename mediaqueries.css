@@ -1,6 +1,5 @@
 @media screen and (min-width: 768px) and (max-width: 1200px) {
-  /****************************************************************************************************** ABOUT-SECTION */
-
+  /************************************** ABOUT-SECTION */
   .about-content {
     display: flex;
     flex-direction: column;
@@ -29,10 +28,8 @@
     gap: 0.5rem;
   }
 }
-
 @media screen and (min-width: 823px) and (max-width: 1124px) {
-  /***************************************************************************************************** HERO-SECTION */
-
+  /***************************************** HERO-SECTION */
   #hero-section {
     flex-direction: column;
     text-align: center;
@@ -51,9 +48,7 @@
     height: 400px;
     width: 400px;
   }
-
-  /****************************************************************************************************** OFFER-SECTION */
-
+  /************************************* OFFER-SECTION */
   #offer-section h1 {
     font-size: 2.3rem;
   }
@@ -64,17 +59,14 @@
     margin-bottom: 1rem;
   }
 }
-
 @media screen and (max-width: 998px) {
-  /****************************************************************************************************** NAVBAR */
+  /******************************************** NAVBAR */
   .nav-item {
     margin-left: 2.5rem;
   }
 }
-
 @media screen and (min-width: 375px) and (max-width: 823px) {
-  /***************************************************************************************************** HERO-SECTION */
-
+  /************************************* HERO-SECTION */
   #hero-section {
     flex-direction: column;
     text-align: center;
@@ -86,7 +78,6 @@
   .hero-content h1 {
     font-size: 2rem;
   }
-
   .hero-content span {
     font-size: 2.5rem;
   }
@@ -104,9 +95,7 @@
     max-width: 350px;
     margin-top: 0.5rem;
   }
-
-  /****************************************************************************************************** ABOUT-SECTION */
-
+  /************************************** ABOUT-SECTION */
   .about-content {
     display: flex;
     flex-direction: column;
